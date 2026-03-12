@@ -1,13 +1,47 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useEffect } from "react";
+import HeroSection from "@/components/HeroSection";
+import GallerySection from "@/components/GallerySection";
+import JourneySection from "@/components/JourneySection";
+import AboutSection from "@/components/AboutSection";
+import FooterSection from "@/components/FooterSection";
+import DotNav from "@/components/DotNav";
+
+const sectionIds = ["hero", "gallery", "journey", "about", "contact"];
 
 const Index = () => {
+  const [activeSection, setActiveSection] = useState("hero");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <DotNav activeSection={activeSection} />
+      <main>
+        <HeroSection />
+        <GallerySection />
+        <JourneySection />
+        <AboutSection />
+        <FooterSection />
+      </main>
+    </>
   );
 };
 
