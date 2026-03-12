@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[97367,["/_next/static/chunks/d648bb8c2699b451.js","/_next/static/chunks/fa6ff46ecd19f2e9.js","/_next/static/chunks/3ace14f28cc5ecec.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
-3:I[97367,["/_next/static/chunks/d648bb8c2699b451.js","/_next/static/chunks/fa6ff46ecd19f2e9.js","/_next/static/chunks/3ace14f28cc5ecec.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
-4:"$Sreact.suspense"
-0:{"buildId":"upVAzal_lb1oahREQj-m0","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Art Jan Elaine A. Ylanan — Artist"}],["$","meta","1",{"name":"description","content":"Portfolio of Art Jan Elaine A. Ylanan. Charcoal, conté, and oil paint. Selected works, exhibitions, and studio practice."}]]}]}]}],null]}],"loading":null,"isPartial":false}
