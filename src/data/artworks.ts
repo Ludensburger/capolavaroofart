@@ -21,7 +21,7 @@ export interface Artwork {
 export const artworks: Artwork[] = [
   {
     id: "1",
-    url: artworkHero,
+    url: artworkHero.src,
     title: "Untitled III",
     year: "2024",
     medium: "Charcoal and gesso on linen",
@@ -31,7 +31,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: "2",
-    url: artwork2,
+    url: artwork2.src,
     title: "Botanical Study IV",
     year: "2023",
     medium: "Ink and watercolor on paper",
@@ -41,7 +41,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: "3",
-    url: artwork3,
+    url: artwork3.src,
     title: "Meridian",
     year: "2024",
     medium: "Oil on canvas",
@@ -51,7 +51,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: "4",
-    url: artwork4,
+    url: artwork4.src,
     title: "Still Life with Shadows",
     year: "2023",
     medium: "Charcoal and conté on paper",
@@ -61,7 +61,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: "5",
-    url: artwork5,
+    url: artwork5.src,
     title: "Nocturne in Red",
     year: "2024",
     medium: "Acrylic on canvas",
@@ -71,7 +71,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: "6",
-    url: artwork6,
+    url: artwork6.src,
     title: "Verdant Memory",
     year: "2023",
     medium: "Watercolor and gouache on paper",
@@ -81,7 +81,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: "7",
-    url: artwork7,
+    url: artwork7.src,
     title: "Gesture VII",
     year: "2024",
     medium: "Sumi ink on rice paper",
@@ -91,7 +91,7 @@ export const artworks: Artwork[] = [
   },
   {
     id: "8",
-    url: artwork8,
+    url: artwork8.src,
     title: "Fault Line",
     year: "2023",
     medium: "Encaustic and oil on panel",

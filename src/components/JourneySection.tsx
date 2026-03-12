@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import profileImg from "@/assets/profile.jpg";
@@ -50,7 +52,7 @@ const JourneySection = () => {
           label="Beginnings"
           title="Roots in Raw Material"
           text="Growing up surrounded by the quiet intensity of Midwestern landscapes, she found her voice through charcoal before she could articulate it in words. Early works—raw, unresolved, urgent—emerged from a basement studio with nothing but compressed sticks and salvaged paper. These formative pieces laid the groundwork for a lifelong exploration of gesture and restraint."
-          image={artwork2}
+          image={artwork2.src}
           imageAlt="Early botanical study"
         />
 
@@ -58,7 +60,7 @@ const JourneySection = () => {
           label="Breakthroughs"
           title="Recognition and Resolve"
           text="A solo exhibition at the Crane Arts Building in 2019 marked a turning point. Critics noted the 'architectural intensity' of her large-scale charcoal works, and the Museum of Contemporary Drawing acquired Untitled I for its permanent collection. The Ford Foundation Fellowship followed, enabling a year of uninterrupted studio practice that produced the acclaimed 'Threshold' series."
-          image={artwork5}
+          image={artwork5.src}
           imageAlt="Nocturne in Red"
           reverse
         />
@@ -84,7 +86,7 @@ const JourneySection = () => {
             </div>
             <div className="overflow-hidden rounded-sm">
               <motion.img
-                src={profileImg}
+                src={profileImg.src}
                 alt="Artist in studio"
                 className="w-full h-auto block grayscale"
                 style={{ y }}

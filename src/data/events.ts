@@ -74,7 +74,7 @@ export const events: WorkshopEvent[] = [
   {
     id: "gallery-talk-process",
     title: "Artist Talk: Process & Intention",
-    subtitle: "An evening with Elena Marchetti",
+    subtitle: "An evening with Art Jan Elaine A. Ylanan",
     date: "April 25, 2026",
     time: "7:00 PM – 9:00 PM",
     location: "Libreria Brac",

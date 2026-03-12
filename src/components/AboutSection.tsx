@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
@@ -62,9 +64,9 @@ const AboutSection = () => {
           transition={spring}
         >
           <span className="section-label">About</span>
-          <h2 className="heading-l2 text-foreground mt-2">Elena Marchetti</h2>
+          <h2 className="heading-l2 text-foreground mt-2">Art Jan Elaine A. Ylanan</h2>
           <p className="body-prose text-foreground/80 mt-6">
-            Elena Marchetti (b. 1982, Chicago, IL) is a visual artist working primarily in charcoal,
+            Art Jan Elaine A. Ylanan (b. 1982, Chicago, IL) is a Artist working primarily in charcoal,
             conté, and oil paint. Her practice investigates the intersection of gesture and structure,
             drawing on traditions of Abstract Expressionism while maintaining a rigorous engagement with
             material process. She holds an MFA from Yale School of Art and has exhibited internationally.

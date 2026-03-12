@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FramedArtwork from "./FramedArtwork";
@@ -42,8 +44,33 @@ const GallerySection = () => {
           </div>
         </motion.div>
 
+        {/* Most Recent - Full Width */}
+        {activeFilter === "All" && filtered.length > 0 && (
+          <motion.div
+            className="mb-16 flex flex-col items-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ ...spring }}
+          >
+            <span className="section-label mb-4 block self-start">Most Recent</span>
+            <FramedArtwork
+              src={filtered[0].url}
+              alt={filtered[0].title}
+              onClick={() => setSelectedWork(filtered[0])}
+              className="max-h-[55vh] lg:max-h-[70vh] w-auto mx-auto object-contain"
+            />
+            <div className="mt-4 px-2 text-center w-full">
+              <p className="font-display text-lg font-medium text-foreground">{filtered[0].title}</p>
+              <p className="text-sm text-muted-foreground tnum">{filtered[0].year} · {filtered[0].medium}</p>
+              <p className="text-xs text-muted-foreground/60 tnum mt-1">{filtered[0].dimensions}</p>
+            </div>
+          </motion.div>
+        )}
+
+        {/* Rest of artworks */}
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
-          {filtered.map((work, i) => (
+          {(activeFilter === "All" ? filtered.slice(1) : filtered).map((work, i) => (
             <motion.div
               key={work.id}
               initial={{ opacity: 0, scale: 0.95 }}

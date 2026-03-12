@@ -1,7 +1,10 @@
+"use client";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const spring = { type: "spring" as const, duration: 0.4, bounce: 0 };
 
@@ -149,11 +152,15 @@ const FooterSection = () => {
           </div>
         </motion.div>
 
-        <div className="mt-24 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-muted-foreground font-body">
-            © <span className="tnum">2024</span> Elena Marchetti. All rights reserved.
-          </p>
-          <p className="text-xs text-muted-foreground/60 font-body">
+        <div className="mt-24 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-body text-muted-foreground">
+          <div className="flex items-center gap-4">
+            <p>© <span className="tnum">2024</span> Art Jan Elaine A. Ylanan. All rights reserved.</p>
+            <span className="opacity-30">•</span>
+            <Link href="/admin" className="hover:text-foreground transition-colors underline decoration-border underline-offset-4">
+              Admin
+            </Link>
+          </div>
+          <p className="text-muted-foreground/60">
             All artwork images are protected under copyright law.
           </p>
         </div>

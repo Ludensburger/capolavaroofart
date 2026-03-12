@@ -1,24 +1,27 @@
+"use client";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 
 const sections = [
-  { id: "hero", label: "Work" },
-  { id: "gallery", label: "Gallery" },
-  { id: "journey", label: "Journey" },
+  { id: "hero", label: "Hero" },
   { id: "about", label: "About" },
+  { id: "gallery", label: "Works" },
   { id: "events", label: "Events" },
   { id: "contact", label: "Contact" },
 ];
 
 interface DotNavProps {
   activeSection: string;
+  onNavigate?: (section: string) => void;
 }
 
-const DotNav = ({ activeSection }: DotNavProps) => {
+const DotNav = ({ activeSection, onNavigate }: DotNavProps) => {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    onNavigate?.(id);
   };
 
   return (
@@ -41,9 +44,9 @@ const DotNav = ({ activeSection }: DotNavProps) => {
               initial={false}
               animate={{
                 backgroundColor: isActive
-                  ? "hsl(358 75% 38%)"
+                  ? "hsl(var(--primary))"
                   : isHovered
-                  ? "hsl(240 10% 10%)"
+                  ? "hsl(var(--foreground) / 0.1)"
                   : "transparent",
                 paddingLeft: isHovered ? 12 : 0,
                 paddingRight: isHovered ? 12 : 0,
@@ -52,7 +55,8 @@ const DotNav = ({ activeSection }: DotNavProps) => {
             >
               {isHovered && (
                 <motion.span
-                  className="text-xs font-display font-medium tracking-wide uppercase text-primary-foreground whitespace-nowrap"
+                  className="text-xs font-display font-medium tracking-wide uppercase whitespace-nowrap"
+                  style={{ color: isActive ? "hsl(var(--primary-foreground))" : "hsl(var(--foreground))" }}
                   initial={{ opacity: 0, width: 0 }}
                   animate={{ opacity: 1, width: "auto" }}
                   exit={{ opacity: 0, width: 0 }}
@@ -64,10 +68,10 @@ const DotNav = ({ activeSection }: DotNavProps) => {
               <div
                 className={`w-2.5 h-2.5 rounded-full transition-colors duration-200 ${
                   isActive
-                    ? "bg-primary-foreground"
+                    ? "bg-primary"
                     : isHovered
-                    ? "bg-primary-foreground"
-                    : "bg-muted-foreground/40"
+                    ? "bg-foreground/60"
+                    : "bg-foreground/30"
                 }`}
               />
             </motion.div>
