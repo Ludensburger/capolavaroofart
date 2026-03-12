@@ -1,49 +1,36 @@
-import { useState, useEffect } from "react";
-import HeroSection from "@/components/HeroSection";
-import GallerySection from "@/components/GallerySection";
-import JourneySection from "@/components/JourneySection";
-import AboutSection from "@/components/AboutSection";
-import EventsSection from "@/components/EventsSection";
-import FooterSection from "@/components/FooterSection";
-import DotNav from "@/components/DotNav";
-
-const sectionIds = ["hero", "gallery", "journey", "about", "events", "contact"];
+import React from 'react';
 
 const Index = () => {
-  const [activeSection, setActiveSection] = useState("hero");
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    sectionIds.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <>
-      <DotNav activeSection={activeSection} />
-      <main>
-        <HeroSection />
-        <GallerySection />
-        <JourneySection />
-        <AboutSection />
-        <EventsSection />
-        <FooterSection />
-      </main>
-    </>
+    <div>
+      {/* Hero Section */}
+      <section id="hero">
+        <h1>Welcome to Visual Story Portfolio</h1>
+      </section>
+
+      {/* About Section */}
+      <section id="about">
+        <h2>About Us</h2>
+        <p>Info about us...</p>
+      </section>
+
+      {/* Gallery Section */}
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Gallery of images...</p>
+      </section>
+
+      {/* Events Section */}
+      <section id="events">
+        <h2>Events</h2>
+        <p>Details of events...</p>
+      </section>
+
+      {/* Footer Section */}
+      <footer>
+        <p>Footer content...</p>
+      </footer>
+    </div>
   );
 };
 
