@@ -3,10 +3,11 @@ import HeroSection from "@/components/HeroSection";
 import GallerySection from "@/components/GallerySection";
 import JourneySection from "@/components/JourneySection";
 import AboutSection from "@/components/AboutSection";
+import EventsSection from "@/components/EventsSection";
 import FooterSection from "@/components/FooterSection";
 import DotNav from "@/components/DotNav";
 
-const sectionIds = ["hero", "gallery", "journey", "about", "contact"];
+const sectionIds = ["hero", "gallery", "journey", "about", "events", "contact"];
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("hero");
@@ -39,6 +40,7 @@ const Index = () => {
         <GallerySection />
         <JourneySection />
         <AboutSection />
+        <EventsSection />
         <FooterSection />
       </main>
     </>
