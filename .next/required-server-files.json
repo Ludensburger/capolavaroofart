@@ -105,7 +105,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/home/ryumendoza/Projects/Contributions/visual-story-portfolio",
+    "outputFileTracingRoot": "/home/ryumendoza/Projects/Contributions/capolavaroofart",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -298,11 +298,11 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "/home/ryumendoza/Projects/Contributions/visual-story-portfolio"
+      "root": "/home/ryumendoza/Projects/Contributions/capolavaroofart"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/home/ryumendoza/Projects/Contributions/visual-story-portfolio",
+  "appDir": "/home/ryumendoza/Projects/Contributions/capolavaroofart",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
