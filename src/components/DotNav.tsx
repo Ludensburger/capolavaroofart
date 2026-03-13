@@ -4,9 +4,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const sections = [
-  { id: "hero", label: "Hero" },
-  { id: "about", label: "About" },
+  // { id: "hero", label: "Hero" },
   { id: "gallery", label: "Works" },
+  { id: "about", label: "About" },
   { id: "events", label: "Events" },
   { id: "contact", label: "Contact" },
 ];

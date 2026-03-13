@@ -1,0 +1,181 @@
+/* About Section Styles */
+.about-section {
+  padding: 5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    padding: 6rem 1.5rem;
+  }
+}
+
+.about-container {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-intro {
+  margin-bottom: 3rem;
+}
+
+.about-title {
+  margin-top: 0.5rem;
+  color: hsl(var(--foreground));
+}
+
+.about-text {
+  margin-top: 1.5rem;
+  color: hsl(var(--foreground) / 0.8);
+}
+
+/* CV Accordion */
+.cv-accordion {
+  margin-top: 3rem;
+  border-top: 1px solid hsl(var(--border));
+}
+
+.cv-item {
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.cv-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  text-align: left;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cv-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: hsl(var(--foreground));
+}
+
+.cv-icon {
+  width: 1rem;
+  height: 1rem;
+  color: hsl(var(--muted-foreground));
+  transition: transform 0.3s;
+}
+
+.cv-icon.is-open {
+  transform: rotate(180deg);
+}
+
+.cv-content {
+  overflow: hidden;
+}
+
+.cv-inner {
+  padding-bottom: 1.5rem;
+}
+
+/* List Items */
+.cv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cv-row {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.cv-year {
+  font-size: 0.875rem;
+  width: 3rem;
+  flex-shrink: 0;
+  color: hsl(var(--muted-foreground));
+  font-variant-numeric: tabular-nums;
+}
+
+.cv-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(var(--foreground));
+}
+
+.cv-venue {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin-left: 0.5rem;
+}
+
+.cv-publication {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: hsl(var(--foreground));
+}
+
+/* Testimonials */
+.testimonials-section {
+  margin-top: 4rem;
+}
+
+.testimonial-block {
+  margin-top: 1.5rem;
+  min-height: 180px;
+}
+
+.testimonial-quote {
+  border-left: 2px solid hsl(var(--primary));
+  padding-left: 1.5rem;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: hsl(var(--foreground) / 0.8);
+}
+
+.quote-author {
+  margin-top: 1rem;
+  display: block;
+}
+
+.author-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(var(--foreground));
+}
+
+.author-role {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin-left: 0.5rem;
+}
+
+.testimonial-dots {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.dot-btn {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  border: none;
+  background-color: hsl(var(--border));
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.dot-btn.is-active {
+  background-color: hsl(var(--primary));
+}

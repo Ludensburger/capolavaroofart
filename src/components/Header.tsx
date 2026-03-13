@@ -9,8 +9,8 @@ import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: "#about", label: "About" },
   { href: "#gallery", label: "Works" },
+  { href: "#about", label: "About" },
   { href: "#events", label: "Events" },
   { href: "#contact", label: "Contact" },
 ];

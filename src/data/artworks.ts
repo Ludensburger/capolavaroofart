@@ -99,4 +99,76 @@ export const artworks: Artwork[] = [
     dimensions: "40 × 52 in.",
     story: "The crackled surface echoes geological time. Layers of wax and pigment build up and fracture, revealing strata of color beneath.",
   },
+  // Additional artworks with various sizes - corrected for actual wide/tall orientations
+  {
+    id: "9",
+    url: artworkHero.src, // reuse for now, in reality would be different image
+    title: "Wide Horizon",
+    year: "2024",
+    medium: "Oil on canvas",
+    series: "Paintings",
+    dimensions: "80 × 40 in.", // Very wide (was incorrectly 40 × 80)
+    story: "An exploration of expansive landscapes, inviting the viewer to contemplate the vastness of space and time.",
+  },
+  {
+    id: "10",
+    url: artwork2.src,
+    title: "Vertical Growth",
+    year: "2023",
+    medium: "Acrylic on canvas",
+    series: "Paintings",
+    dimensions: "20 × 60 in.", // Very tall (correct as is)
+    story: "A study in verticality, inspired by the growth patterns of ancient trees reaching toward the sky.",
+  },
+  {
+    id: "11",
+    url: artwork3.src,
+    title: "Square Meditation",
+    year: "2024",
+    medium: "Watercolor on paper",
+    series: "Paintings",
+    dimensions: "30 × 30 in.", // Square
+    story: "A contemplative piece exploring balance and symmetry through repeated geometric forms.",
+  },
+  {
+    id: "12",
+    url: artwork4.src,
+    title: "Extended Vision",
+    year: "2023",
+    medium: "Charcoal on paper",
+    series: "Dry Media",
+    dimensions: "100 × 50 in.", // Extremely wide (was incorrectly 50 × 100)
+    story: "Pushing the boundaries of peripheral vision, this piece creates an immersive visual field.",
+  },
+  {
+    id: "13",
+    url: artwork5.src,
+    title: "Elevated Perspective",
+    year: "2024",
+    medium: "Ink on silk",
+    series: "Dry Media",
+    dimensions: "18 × 72 in.", // Tall and narrow (correct as is)
+    story: "A view from above, capturing the intricate patterns of urban landscapes seen from great heights.",
+  },
+  // Add a few more test cases for good measure
+  {
+    id: "14",
+    url: artwork6.src,
+    title: "Panoramic View",
+    year: "2024",
+    medium: "Acrylic on canvas",
+    series: "Paintings",
+    dimensions: "120 × 40 in.", // Ultra wide
+    story: "An extreme wide format piece that challenges traditional viewing perspectives.",
+  },
+  {
+    id: "15",
+    url: artwork7.src,
+    title: "Towering Presence",
+    year: "2023",
+    medium: "Sumi ink on rice paper",
+    series: "Dry Media",
+    dimensions: "24 × 96 in.", // Ultra tall
+    story: "A vertical exploration of height and presence, drawing the eye upward.",
+  },
 ];

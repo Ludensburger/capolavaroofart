@@ -47,7 +47,7 @@ const testimonials = [
 ];
 
 const AboutSection = () => {
-  const [expandedSection, setExpandedSection] = useState<string | null>("exhibitions");
+  const [expandedSection, setExpandedSection] = useState<string | null>("");
   const [testimonialIndex, setTestimonialIndex] = useState(0);
 
   const toggle = (section: string) => {

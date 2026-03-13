@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Art Jan Elaine A. Ylanan — Artist",
   description: "Portfolio of Art Jan Elaine A. Ylanan. Charcoal, conté, and oil paint. Selected works, exhibitions, and studio practice.",
   icons: {
-    icon: "/favicon/artofart.jpg",
+    icon: "/favicon/artofart.png",
   },
 };
 

@@ -5,10 +5,10 @@ import Header from "./Header";
 import DotNav from "./DotNav";
 import ThemeToggle from "./ThemeToggle";
 
-const sections = ["hero", "about", "gallery", "events", "contact"];
+const sections = ["gallery", "about", "events", "contact"];
 
 export default function PageLayout({ children }: { children: React.ReactNode }) {
-  const [activeSection, setActiveSection] = useState("hero");
+  const [activeSection, setActiveSection] = useState("gallery");
 
   const handleSetActive = useCallback((section: string) => {
     setActiveSection(section);

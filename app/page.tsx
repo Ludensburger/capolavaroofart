@@ -1,4 +1,3 @@
-import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import GallerySection from "@/components/GallerySection";
 import EventsSection from "@/components/EventsSection";
@@ -10,9 +9,8 @@ export default function Home() {
   return (
     <PageLayout>
       <main>
-        <HeroSection />
-        <AboutSection />
         <GallerySection />
+        <AboutSection />
         <EventsSection events={events} />
         <FooterSection />
       </main>
